@@ -1,0 +1,33 @@
+{
+    "name": "udp-broadcast-listener",
+    "version": "0.0.1",
+    "description": "a udp broadcast listener",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test:watch": "nodemon --config nodemon.test.json --watch src \"specs/*.spec.ts\"",
+        "build:watch": "nodemon --config nodemon.build.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Zacknetic/udp-broadcast-listener"
+    },
+    "keywords": [
+        "UDP"
+    ],
+    "author": "Zachary Avino",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/expect": "^24.3.0",
+        "@types/mocha": "^10.0.6",
+        "mocha": "^10.2.0",
+        "nodemon": "^3.0.2",
+        "ts-mocha": "^10.0.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}
